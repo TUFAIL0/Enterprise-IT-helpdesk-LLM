@@ -1,0 +1,598 @@
+
+
+ === Page 1 === 
+
+Intune Enrollment Options
+These lists include organization-owned devices and user-owned devices (BYOD or personal 
+devices). Select the option that best meets your organization requirements.
+Enroll your devices into management with 
+Intune
+A core component of enterprise-level security includes managing and protecting devices. 
+Whether you’re building a Zero Trust security architecture, hardening your environment 
+against ransomware, or building in protections to support remote workers, managing devices 
+is part of the strategy. While Microsoft 365 includes several tools and methodologies for 
+managing and protecting devices, Intune provides optimal integration. This guidance helps 
+you decide which Intune enrollment option is best for your endpoints.  
+Enroll devices in stages
+For more guidance, see aka.ms/IntunePlanningGuide.For more guidance, see aka.ms/IntunePlanningGuide.
+February 2025    ©2025 Microsoft Corporation. All rights reserved. To send feedback about this documentation, please write to us at CloudAdopt@microsoft.com.
+Evaluate
+Full deployment
+Pilot
+Evaluate
+Full deployment
+Pilot
+Which enrollment option is best for your 
+devices?
+This guidance helps you decide which enrollment option is best for your endpoints, 
+including:
+▪ Windows devices
+▪ macOS
+▪ iOS/iPad
+▪ Android
+A staged approach is a method of identifying a set of devices to enroll and verifying that 
+certain criteria is met before proceeding to enroll a larger set of devices. You can define the 
+exit criteria for each stage and ensure that these are satisfied before moving on to the next 
+stage.
+Adopting a staged-based deployment helps reduce potential issues that can arise while 
+enrolling devices. By evaluating and then piloting a certain number of devices first, you can 
+identify potential issues and mitigate potential risks that might arise.
+Evaluate
+Pilot
+Full deployment
+Deployment stage Description
+Stage 1: Identify 50 endpoints for testing
+Stage 2: Identify the next 50-100 endpoints in the production 
+environment
+Stage 3: Enroll the rest of the endpoints in larger increments
+This topic is 1 of 5
+Page 1 
+
+ === Page 2 === 
+
+February 2025    © 2025 Microsoft Corporation. All rights reserved. To send feedback about this documentation, please write to us at CloudAdopt@microsoft.com.
+Enroll Android devices in Microsoft Intune
+ https://aka.ms/AndroidEnrollmentGuidehttps://aka.ms/AndroidEnrollmentGuide
+Use this enrollment option 
+whenFeature
+ 
+Use Google Mobile 
+Services (GMS).
+Devices are 
+personal or BYOD.
+You have new or 
+existing devices.
+Need to enroll a few 
+devices, or a large 
+number of devices 
+(bulk enrollment).
+Devices are 
+associated with a 
+single user.
+You use the 
+optional device 
+enrollment 
+manager (DEM) 
+account.
+Devices are 
+managed by 
+another MDM 
+provider.
+Devices are owned 
+by the organization 
+or school.
+Devices are user-less, 
+such as kiosk, 
+dedicated, or shared.
+BYOD: Android Enterprise 
+personally owned devices 
+with a work profile
+Use this enrollment 
+option when
+Android Enterprise 
+dedicated devices
+Use this enrollment 
+option when
+Android Enterprise 
+fully managed
+Use this enrollment 
+option when
+Android Enterprise 
+corporate owned work profile
+Use this enrollment 
+option when
+Android Open 
+Source Project
+When a device enrolls, MDM 
+providers install certificates 
+and other files. These files 
+must be removed.
+You can mark these devices 
+as corporate or personal.
+Not recommended for 
+organization-owned devices.
+User-less or shared 
+devices should be 
+organization-owned.
+These devices should be 
+enrolled using Android 
+Enterprise personally owned 
+devices with a work profile.
+Not recommended. These 
+devices should be enrolled 
+using Android Enterprise 
+fully managed.
+The DEM account 
+isn't supported.
+To be fully managed by Intune, 
+users need to unenroll from 
+the current MDM provider, 
+and then enroll in Intune.
+These devices should be 
+enrolled using Android 
+Enterprise personally owned 
+devices with a work profile.
+User-less devices should be 
+enrolled using Android 
+Enterprise dedicated devices.
+To be fully managed by Intune, 
+users need to unenroll from 
+the current MDM provider, 
+and then enroll in Intune.
+The DEM account 
+isn't supported.
+User-less devices should be 
+enrolled using Android 
+Enterprise dedicated devices, or 
+an organization administrator.
+To be fully managed by Intune, 
+users need to unenroll from 
+the current MDM provider, 
+and then enroll in Intune.
+The DEM account 
+isn't supported.
+These devices should be 
+enrolled using Android 
+Enterprise personally owned 
+devices with a work profile.
+To be fully managed by Intune, 
+users need to unenroll from 
+the current MDM provider, 
+and then enroll in Intune.
+Device doesn't support GMS. 
+Some countries don't 
+support GMS.
+Can only enroll one 
+device at a time.
+The DEM account 
+isn't supported.
+Android Enterprise personally 
+owned devices with a work 
+profile support GMS.
+This topic is 2 of 5
+Page 2 
+
+ === Page 3 === 
+
+February 2025    © 2025 Microsoft Corporation. All rights reserved. To send feedback about this documentation, please write to us at CloudAdopt@microsoft.com.
+Enroll iOS and iPadOS devices in Microsoft Intune
+Use this enrollment 
+option when
+Feature
+Automated Device Enrollment 
+(ADE) (supervised)
+Use this enrollment 
+option when
+Feature
+Apple Configurator 
+enrollment
+Use this enrollment 
+option when
+Feature
+BYOD: User and 
+Device enrollment
+Devices are 
+personal or BYOD.
+Not recommended. These devices 
+should be enrolled using MAM, or 
+User and Device enrollment.
+A country doesn't 
+support Apple Business 
+Manager or Apple 
+School Manager.
+If your country supports ABS or ASM, 
+then devices should be enrolled using 
+Automated Device Enrollment.
+A country doesn't 
+support Apple Business 
+Manager or Apple 
+School Manager.
+If your country supports ABS or ASM, 
+then devices should be enrolled using 
+Automated Device Enrollment.
+Devices are 
+personal or BYOD.
+Not recommended. These devices 
+should be enrolled using MAM, or 
+User and Device enrollment.
+Devices are 
+personal or BYOD.
+Not recommended. These devices 
+should be enrolled using MAM, or 
+User and Device enrollment.
+You have new or 
+existing devices.
+You have new or 
+existing devices.
+Devices are 
+personal or BYOD.
+You have new or 
+existing devices.
+Need to enroll a few 
+devices, or a large 
+number of devices.
+Devices are 
+associated with 
+a single user.
+Devices are 
+managed by 
+another MDM 
+provider.
+Devices are owned 
+by the organization 
+or school.
+Devices are user-
+less, such as kiosk, 
+dedicated, or shared.
+You use the 
+optional device 
+enrollment manager 
+(DEM) account.
+When a device enrolls, MDM providers 
+install certificates and other files. These files 
+must be removed. You must unenroll, reset 
+the devices, or contact the MDM provider.
+If you have a large number of devices, 
+then this method will take some time.
+Not recommended. Organization-
+owned devices should be enrolled 
+using Automated Device Enrollment or 
+Apple Configurator.
+Typically, user-less or shared devices are 
+organization-owned. These devices 
+should be enrolled using Automated 
+Device Enrollment or Apple Configurator.
+You want to help 
+protect a specific 
+feature on the device, 
+such as per-app VPN.
+You want to help 
+protect a specific 
+feature on the device, 
+such as per-app VPN.
+You have new or 
+existing devices.
+You want 
+supervised mode.
+Supervised mode deploys software 
+updates, restricts features, allows and 
+blocks apps, and more.
+You want 
+supervised mode.
+Supervised mode deploys software 
+updates, restricts features, allows and 
+blocks apps, and more.
+Need to enroll a few 
+devices, or a large 
+number of devices.
+Devices are 
+associated with 
+a single user.
+Devices are 
+managed by 
+another MDM 
+provider.
+Devices are owned 
+by the organization 
+or school.
+Devices are user-
+less, such as kiosk, 
+dedicated, or shared.
+You use the 
+optional device 
+enrollment manager 
+(DEM) account.
+Users must unenroll from the current 
+MDM provider, then enroll in Intune. 
+With organization-owned devices, we 
+recommend enrolling in Intune.
+The DEM account isn't supported.
+If you have a large number of devices, 
+then this method will take some time.
+You need a wired 
+connection, or 
+are having a 
+network issue.
+You need a wired 
+connection, or 
+are having a 
+network issue.
+Devices are 
+associated with 
+a single user.
+You use the 
+optional device 
+enrollment manager 
+(DEM) account.
+The DEM account isn't supported.
+Your team doesn't 
+want to use the ABM 
+or ASM portals, to 
+set up requirements.
+The idea of not using the ABM or 
+ASM portals is to give administrators 
+less control.
+Your team doesn't 
+want to use the ABM 
+or ASM portals, to 
+set up requirements.
+The idea of not using the ABM or 
+ASM portals is to give administrators 
+less control.
+Need to enroll a few 
+devices, or a large 
+number of devices.
+If you have a large number of devices, 
+then this method will take some time.
+Need to enroll a few 
+devices, or a large 
+number of devices.
+If you have a large number of devices, 
+then this method will take some time.
+Devices are 
+managed by 
+another MDM 
+provider.
+Devices are owned 
+by the organization 
+or school.
+Devices are user-
+less, such as kiosk, 
+dedicated, or shared.
+Users must unenroll from the current 
+MDM provider, then enroll in Intune. 
+With organization-owned devices, we 
+recommend enrolling in Intune.
+Existing devices should be enrolled 
+using Apple Configurator.
+Applicable with new devices.
+Existing devices should be enrolled 
+using Apple Configurator.
+Applicable with new devices.
+https://aka.ms/iOSEnrollmentGuidehttps://aka.ms/iOSEnrollmentGuide
+This topic is 3 of 5
+Page 3 
+
+ === Page 4 === 
+
+Use this enrollment option when
+February 2025    © 2025 Microsoft Corporation. All rights reserved. To send feedback about this documentation, please write to us at CloudAdopt@microsoft.com.
+Enroll macOS devices in Microsoft Intune
+Use this enrollment option when
+Feature
+BYOD: Device enrollment
+Use this enrollment option when
+Automated Device Enrollment (ADE) (supervised)
+https://aka.ms/macOSEnrollmentGuidehttps://aka.ms/macOSEnrollmentGuide
+Direct enrollment
+Devices are 
+personal or BYOD.
+Not recommended. BYOD or personal devices should be 
+enrolled using Device enrollment.
+To be fully managed by Intune, users must unenroll from the current 
+MDM provider, and then enroll in Intune. Or, you can use Device 
+enrollment to manage specifics apps on the device. Since these devices 
+are organization-owned, it's recommended to enroll in Intune.
+The DEM account isn't supported.
+Need to enroll a few 
+devices, or a large 
+number of devices.
+Devices are 
+associated with 
+a single user.
+Devices are 
+managed by 
+another MDM 
+provider.
+Devices are owned 
+by the organization 
+or school.
+Devices are user-
+less, such as kiosk, 
+dedicated, or shared.
+You use the 
+optional device 
+enrollment manager 
+(DEM) account.
+It’s recommended that organization-owned devices 
+should be enrolled using Automated Device Enrollment or 
+Apple Configurator.
+These devices are organization-owned. User-less devices 
+should be enrolled using Automated Device Enrollment or 
+Apple Configurator.
+Be aware of impact and any limitations using DEM account.
+You have new 
+or existing 
+devices.
+When a device enrolls, MDM providers install certificates and 
+other files. These files must be removed. You must unenroll, reset 
+the devices, or contact the MDM provider.
+Not recommended. BYOD or personal devices should be 
+enrolled using Device enrollment.
+The DEM account isn't supported.
+Not recommended. Devices that need user affinity should 
+be enrolled using Automated device enrollment (ADE).
+To enroll existing devices, see Enroll your macOS device registered in 
+ABM/ASM with Automated Device Enrollment after Setup Assistant.
+Applicable with new devices.
+If you have a large number of devices, then this 
+method will take some time.
+If you have a large number of devices, then this 
+method will take some time.
+To be fully managed by Intune, users must unenroll from the current 
+MDM provider, and then enroll in Intune. Or, you can use Device 
+enrollment to manage specifics apps on the device. Since these devices 
+are organization-owned, it's recommended to enroll in Intune.
+A country doesn't 
+support Apple Business 
+Manager or Apple 
+School Manager.
+If your country supports ABS or ASM, then devices 
+should be enrolled using Automated Device Enrollment.
+You need a wired 
+connection, or 
+are having a 
+network issue.
+Your team doesn't 
+want to use the ABM 
+or ASM portals, to 
+set up requirements.
+The idea of not using the ABM or ASM portals is to 
+give administrators less control.
+If there’s a network issue, you can use Direct enrollment.
+Use Direct enrollment.
+Use Direct enrollment.
+If there’s a network issue, you can use Direct enrollment.
+Use Direct enrollment.
+Use Direct enrollment.
+A wired connection isn’t needed, but can be used. A wired connection isn’t needed, but can be used.
+This topic is 4 of 5
+Page 4 
+
+ === Page 5 === 
+
+February 2025    © 2025 Microsoft Corporation. All rights reserved. To send feedback about this documentation, please write to us at CloudAdopt@microsoft.com.
+Enroll Windows devices in Microsoft Intune
+Use this enrollment option when
+Feature
+Windows Automatic enrollment
+Use this enrollment option when
+Windows Autopilot
+Use this enrollment option when
+BYOD: User enrollment
+Use this enrollment option when
+Co-management with Configuration Manager
+https://aka.ms/WindowsEnrollmentGuidehttps://aka.ms/WindowsEnrollmentGuide
+You have 
+Microsoft Entra 
+Premium.
+Devices are 
+personal or BYOD.
+You'll use Conditional 
+Access on devices enrolled 
+via bulk enrollment.
+Need to enroll a few 
+devices, or a large 
+number of devices.
+Devices are associated 
+with a single user.
+Devices are managed 
+by another MDM 
+provider.
+Devices are owned by 
+the organization or 
+school.
+Devices are user-less, 
+such as kiosk, 
+dedicated, or shared.
+You have new or 
+existing devices.
+You use the optional 
+device enrollment 
+manager (DEM) account.
+To be fully managed by Intune, users need 
+to unenroll from the current MDM 
+provider, and then enroll in Intune.
+Bulk enrollment is available for organization-
+owned devices, not personal/BYOD.
+Requires users to sign in with their organization 
+account and automatically enroll. Then create a 
+kiosk profile, and assign it to this device.
+To be fully managed by Intune, users need to 
+unenroll from the current MDM provider, and 
+then enroll in Intune.
+Requires users to sign in with their organization 
+account and automatically enroll. Then create a kiosk 
+profile, and assign it to this device.
+Requires a user to sign in with an organization 
+account, and use the Settings app, which isn’t 
+common on shared devices.
+Windows Autopilot uses Automatic 
+enrollment. Automatic enrollment requires 
+Entra Premium.
+You can update desktops running older Windows 
+versions, e.g. Windows 7 to 10. This option also 
+uses Microsoft Configuration Manager.
+For BYOD or personal devices, use Windows 
+automatic enrollment or a User enrollment option.
+You have remote 
+workers.
+Devices are hybrid 
+Entra joined.
+You purchase devices from 
+an OEM that supports the 
+Windows Autopilot service.
+Hybrid Entra joined devices are joined to your on-
+premises AD, and registered with your Entra. Devices 
+registered in Entra are available to Intune.
+If the devices join Entra, then they can 
+use Entra Premium features.
+Entra Premium isn't required.
+Users should know that their personal devices 
+might be managed by the organization IT.
+You can use User enrollment, but it's 
+recommended to use Windows Autopilot, or 
+Windows Automatic enrollment.
+DEM accounts don't apply to User enrollment.
+To be co-managed, users need to unenroll from 
+the current MDM provider. They shouldn't be 
+enrolled using the Intune classic agents.
+Requires users to sign in with their organization 
+account and automatically enroll. Then create a kiosk 
+profile, and assign it to this device.
+For devices that aren't running Windows 10/11, 
+such as Windows 7, you'll need to upgrade.
+DEM accounts don't apply to co-management.
+Depending on your co-management 
+configuration, Entra Premium might 
+be required.
+Hybrid Entra joined devices are joined to your on-
+premises AD, and registered with your Entra. Devices 
+registered in Entra are available to Intune.
+Users should know that their personal devices might 
+be managed by the organization IT.
+A device managed by another MDM provider 
+can register in Entra.
+For Intune, users need to unenroll from the current 
+provider, and then enroll in Intune.
+Devices are 
+enrolled in Intune.
+You have devices you want to bring to co-management. 
+Devices may have been enrolled using Windows 
+Autopilot, or directly from your hardware OEM.
+If your OEM supports Windows 
+Autopilot, then use Windows 
+Autopilot enrollment.
+With Windows Autopilot, the OEM 
+can ship devices directly to users.
+Automatic enrollment is available for 
+full Entra joined devices (cloud-native 
+endpoints).
+Not applicable Not applicableAvailable on Windows 11 and 
+Windows 10 1803+.
+Not applicable
+Not applicable Not applicable Not applicable
+This topic is 3 of 5
+Page 3 
+DEM accounts don't apply to Windows 
+Autopilot.
