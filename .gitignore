@@ -18,3 +18,5 @@ checkpoints/
 *.pth
 *.ckpt
 *.safetensors
+models/
+experiments/
