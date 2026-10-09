@@ -1,0 +1,24 @@
+Corpus Cleaning Report
+=====================
+
+Document Counts
+---------------
+Initial documents: 6
+After length filtering: 6
+After deduplication: 6
+After English filtering: 6
+
+Documents Removed
+-----------------
+Removed by length filtering: 0
+Removed by deduplication: 0
+Removed by English filtering: 0
+
+Cleaned Documents
+-----------------
+data/cleaned/microsoft_intune/intune_enrollment_option.txt | 381 words
+data/cleaned/microsoft_intune/intune_migration_framework.txt | 2587 words
+data/cleaned/redhat/rhel7_system_administration_guid.txt | 195451 words
+data/cleaned/servicenow/itom_bfsi_guide.txt | 1394 words
+data/cleaned/servicenow/itom_subscription_overview.txt | 717 words
+data/cleaned/ubuntu/ubuntu_server.txt | 293403 words
